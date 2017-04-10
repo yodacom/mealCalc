@@ -1,0 +1,24 @@
+{
+  "name": "mealcalc",
+  "version": "0.0.0",
+  "description": "a meal cost calculator",
+  "main": "mealCalculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yodacom/mealCalc.git"
+  },
+  "keywords": [
+    "meal",
+    "calculator",
+    "food"
+  ],
+  "author": "Jeremy Black",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yodacom/mealCalc/issues"
+  },
+  "homepage": "https://github.com/yodacom/mealCalc#readme"
+}
