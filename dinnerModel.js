@@ -70,34 +70,33 @@ var diners = [
 ];
 
 var showDiners = function(){
-	console.log("the dinners are:" );
+	console.log("The diners bill is:" );
 	var total = 0;
 
 	for (i=0; i<diners.length; i++){
 		var mealChoiceCost = diners[i].mealChoice.cost;
-		console.log(diners[i].name);
+		var dinersName = diners[i].name;
+		console.log(dinersName);
 		console.log(diners[i].mealChoice.name);
 		console.log(mealChoiceCost);
 		total += diners[i].mealChoice.cost;
 		var tip = diners[i].mealChoice.cost * 0.2
 		console.log(tip);
-		var items=diners[i].mealChoice.items
+		var items=diners[i].mealChoice.items;
 		for (j = 0; j<items.length;j++){
 			console.log(items[j]);
 		}
+		
 	}
 	console.log(total);
 	var totalTip = total * 0.2;
 	console.log(totalTip);
 
-	// // more clear output
-	// console.log(
-	// 	` Diners name: ${diners[i].name} `
-	// );
 };
 
 
 showDiners();
+// showDinerBill();
 
 // Functions are to show list of diners, with their meal choice and items listed of that meal.
 // Then display total cost for each diner's meal'
