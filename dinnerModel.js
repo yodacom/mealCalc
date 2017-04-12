@@ -64,6 +64,12 @@ var diners = [
 	}
 
 ];
+
+
+// I want to show list of diners, with their meal chosen and items of that meal.
+// Then display total cost for each diner's meal'
+// Then show the total of all the meals, calculate tip of 20% of total, and then divide that tip by a ratio of cost of each meal for each diner and show each diners part of the total tip.  Then add the tip to each diners total for display of a total owed for each diner. 
+
 var i;
 var text = " ";
 var dinersNames = function(){
@@ -72,9 +78,9 @@ var dinersNames = function(){
 		console.log(diners[i].name);
 	return dinersNames();
 
-	function mealsCost() {
-		var totalMeals;
-		for (totalMeals in meals) {
+	function dinerMealCost() {
+		var totalMeal;
+		for (totalMeal in meals) {
 			var list = document.getElementById("total");
 			list.innerHTML = list.innerHTML + letters[forincounter];
 		}
@@ -89,3 +95,4 @@ for(x in meals){
 	temp += "</ul></li>";
 	$("ul:nth-child(2)").append(temp);
 }
+ 
