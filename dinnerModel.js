@@ -70,7 +70,7 @@ var diners = [
 ];
 
 var showDiners = function(){
-	console.log("The diners bill is:" );
+	console.log(" The diners bill is:" );
 	var total = 0;
 
 	for (i=0; i<diners.length; i++){
