@@ -72,10 +72,12 @@ var diners = [
 var showDiners = function(){
 	console.log("the dinners are:" );
 	var total = 0;
+
 	for (i=0; i<diners.length; i++){
+		var mealChoiceCost = diners[i].mealChoice.cost;
 		console.log(diners[i].name);
 		console.log(diners[i].mealChoice.name);
-		console.log(diners[i].mealChoice.cost);
+		console.log(mealChoiceCost);
 		total += diners[i].mealChoice.cost;
 		var tip = diners[i].mealChoice.cost * 0.2
 		console.log(tip);
@@ -87,6 +89,11 @@ var showDiners = function(){
 	console.log(total);
 	var totalTip = total * 0.2;
 	console.log(totalTip);
+
+	// // more clear output
+	// console.log(
+	// 	` Diners name: ${diners[i].name} `
+	// );
 };
 
 
